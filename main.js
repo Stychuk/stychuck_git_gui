@@ -1,4 +1,4 @@
-let theme_id = "light";
+let theme_id = "light"; // Початкова тема (за замовчуванням світла).
 
 window.onload = function clickTheme() {
     let radios = document.getElementsByName("selected_topic");
@@ -34,6 +34,7 @@ function clickTheme() {
     }
     
     console.log(theme_id);
+	// Застосовуємо вибрану тему до сторінки.
     if (theme_id == 'light') {
         document.getElementById("theme_initial").href = '/theme_light.css';
     }
